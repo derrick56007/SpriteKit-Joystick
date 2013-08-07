@@ -3,14 +3,19 @@ Joystick TheSneakyNarwhal
 
 Joystick class for Sprite Kit
 
-///////////////////To make the joystick/////////////////////////
+                        To make the joystick
 
-Import the Joystick.h class to the header file of your scene
-Declare an instance of Joystick --> (Joystick *joystick)
-Make the the sprites for the joystick image and backdrop
-Then initialize the joystick with the created SkSpriteNodes
-Position The sprite (preferably --> CGPointMake(joystick.size.width/2, joystick.size.height/2))
-Add the child to the scene
+1.Import the Joystick.h class to the header file of your scene.
+
+2.Declare an instance of Joystick --> (Joystick *joystick).
+
+3.Make the the sprites for the joystick image and backdrop.
+
+4.Then initialize the joystick with the created SkSpriteNodes.
+
+5.Position The sprite (preferably --> CGPointMake(joystick.size.width/2, joystick.size.height/2)).
+
+6.Add the child to the scene
 
     SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"joystick"];
     SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"dpad"];
@@ -42,4 +47,4 @@ For movement, you can do something like,
 Just make sure to import the QuartzCore framework and to declare the instances of the CADisplayLink
 and the player in the header file
 
-- TheSneakyNarwhal
+    TheSneakyNarwhal

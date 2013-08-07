@@ -18,9 +18,8 @@ How to make the joystick
     SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"joystick"];
     SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"dpad"];
     joystick = [Joystick joystickWithThumb:jsThumb andBackdrop:jsBackdrop];
-    joystick.position = CGPointMake(self.size.width/2, self.size.height/2);
+    joystick.position = CGPointMake(jsBackdrop.size.width, jsBackdrop.size.height);
     [self addChild:joystick];
-    
 Movement
 ========
 
@@ -47,5 +46,32 @@ For movement, you can do something like,
 
 Just make sure to import the QuartzCore framework and to declare the instances of the CADisplayLink
 and the player in the header file
+
+For animations you can do something like,
+
+    if (joystick.velocity.x > 0)
+    {
+        [player walkRightAnim];
+    }
+    else if (joystick.x < 0)
+    {
+        [player walkLeftAnim];
+    }
+    else
+    {
+        [player idleAnim];
+    }
+    if (joystick.velocity.y > 0)
+    {
+        [player walkUpAnim];
+    }
+    else if (joystick.velocity.y < 0)
+    {
+        [player walkDownAnim];
+    }
+    else
+    {
+        [player idleAnim];
+    }
 
                                                         TheSneakyNarwhal

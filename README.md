@@ -1,9 +1,10 @@
-Joystick TheSneakyNarwhal
-========
+Joystick -TheSneakyNarwhal
+====================
 
 Joystick class for Sprite Kit
 
-                        To make the joystick
+To make the joystick
+=====================
 
 1.Import the Joystick.h class to the header file of your scene.
 
@@ -47,4 +48,4 @@ For movement, you can do something like,
 Just make sure to import the QuartzCore framework and to declare the instances of the CADisplayLink
 and the player in the header file
 
-    TheSneakyNarwhal
+                                                TheSneakyNarwhal

@@ -1,9 +1,6 @@
 Joystick -TheSneakyNarwhal
 ====================
-
-Joystick class for Sprite Kit
-
-To make the joystick
+How to make the joystick
 =====================
 
 1.Import the Joystick.h class to the header file of your scene.
@@ -23,6 +20,9 @@ To make the joystick
     joystick = [Joystick joystickWithThumb:jsThumb andBackdrop:jsBackdrop];
     joystick.position = CGPointMake(self.size.width/2, self.size.height/2);
     [self addChild:joystick];
+    
+Movement
+========
 
 To use the joystick, use the velocity property --> (joystick.velocity.x/ joystick.velocity.y)
 For movement, you can do something like,
@@ -48,4 +48,4 @@ For movement, you can do something like,
 Just make sure to import the QuartzCore framework and to declare the instances of the CADisplayLink
 and the player in the header file
 
-                                                TheSneakyNarwhal
+                                                        TheSneakyNarwhal

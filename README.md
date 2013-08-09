@@ -75,3 +75,15 @@ For animations you can do something like,
     }
 
                                                         TheSneakyNarwhal
+                                                        
+Rotation
+========
+
+For rotation, use the joystick property angularVelocity (joystick.angularVelocity)
+
+    if (joystick.velocity.x != 0 || joystick.velocity.y != 0)
+    {
+        player.zRotation = joystick.angularVelocity;
+    }
+    
+PS: The formula for finding the radians of a point and the origin is atan2(position.x - origin.x, position.y - origin.y)

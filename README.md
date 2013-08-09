@@ -57,10 +57,6 @@ For animations you can do something like,
     {
         [player walkLeftAnim];
     }
-    else
-    {
-        [player idleAnim];
-    }
     if (joystick.velocity.y > 0)
     {
         [player walkUpAnim];
@@ -69,7 +65,7 @@ For animations you can do something like,
     {
         [player walkDownAnim];
     }
-    else
+    if (joystick.velocity.x == 0 && joystick.velocity.y == 0)
     {
         [player idleAnim];
     }

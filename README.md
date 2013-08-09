@@ -74,7 +74,6 @@ For animations you can do something like,
         [player idleAnim];
     }
 
-                                                        TheSneakyNarwhal
                                                         
 Rotation
 ========
@@ -86,4 +85,8 @@ For rotation, use the joystick property angularVelocity (joystick.angularVelocit
         player.zRotation = joystick.angularVelocity;
     }
     
-PS: The formula for finding the radians of a point and the origin is atan2(position.x - origin.x, position.y - origin.y)
+PS: The formula for finding the radians of a point and the origin is -atan2(position.x - origin.x, position.y - origin.y)
+
+If you want to find the angle in degrees, multiply the above formula by 180/M_PI
+
+                                                        TheSneakyNarwhal

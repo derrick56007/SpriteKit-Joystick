@@ -17,7 +17,7 @@
 
 @implementation Joystick
 
-@synthesize velocity;
+@synthesize velocity, angularVelocity;
 
 -(CGPoint) anchorPointInPoints
 {
@@ -89,6 +89,8 @@
             }
         }
         velocity = CGPointMake(((thumbNode.position.x - self.anchorPointInPoints.x)), ((thumbNode.position.y - self.anchorPointInPoints.y)));
+        
+        angularVelocity = -atan2(thumbNode.position.x - self.anchorPointInPoints.x, thumbNode.position.y - self.anchorPointInPoints.y);
     }
     
 }

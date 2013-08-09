@@ -14,9 +14,11 @@
     BOOL isTracking;
     CGPoint velocity;
     CGPoint travelLimit;
+    float angularVelocity;
 }
 
 @property(nonatomic, readonly) CGPoint velocity;
+@property(nonatomic, readonly) float angularVelocity;
 
 -(id) initWithThumb: (SKSpriteNode*) aNode;
 +(id) joystickWithThumb: (SKSpriteNode*) aNode;

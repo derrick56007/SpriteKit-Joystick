@@ -15,10 +15,12 @@
     CGPoint velocity;
     CGPoint travelLimit;
     float angularVelocity;
+    float size;
 }
 
 @property(nonatomic, readonly) CGPoint velocity;
 @property(nonatomic, readonly) float angularVelocity;
+@property(nonatomic, readonly) float size;
 
 -(id) initWithThumb: (SKSpriteNode*) aNode;
 +(id) joystickWithThumb: (SKSpriteNode*) aNode;

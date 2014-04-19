@@ -1,5 +1,7 @@
 Joystick -TheSneakyNarwhal
 ====================
+![alt tag](https://raw.githubusercontent.com/TheSneakyNarwhal/SpriteKit-Joystick/master/pic.png)
+====================
 How to make the joystick
 =====================
 

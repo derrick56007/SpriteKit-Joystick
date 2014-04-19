@@ -55,7 +55,7 @@ For animations you can do something like,
     {
         [player walkRightAnim];
     }
-    else if (joystick.x < 0)
+    else if (joystick.velocity.x < 0)
     {
         [player walkLeftAnim];
     }

@@ -58,9 +58,13 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if (isTracking == NO)
+    for (UITouch *touch in touches)
     {
-        isTracking = YES;
+        CGPoint touchPoint = [touch locationInNode:self];
+        if (isTracking == NO && CGRectContainsPoint(thumbNode.frame, touchPoint))
+        {
+            isTracking = YES;
+        }
     }
 }
 
